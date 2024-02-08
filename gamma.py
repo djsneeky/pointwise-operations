@@ -60,7 +60,8 @@ def main():
     
     matching_gray_level = 170
     # Display the image with the matching gray level
-    # matching_image = display_stripes(matching_gray_level)
+    matching_image = display_stripes(matching_gray_level)
+    plt.imsave('matching_gray_level.png', matching_image, cmap='gray')
 
     # Print the matching gray level
     print("Matching Gray Level:", matching_gray_level)
